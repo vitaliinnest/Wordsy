@@ -4,8 +4,8 @@ namespace Wordsy.Application;
 
 public static class DependencyInjection
 {
-	public static IServiceCollection AddApplication(this IServiceCollection serviceCollection)
+	public static IServiceCollection AddApplication(this IServiceCollection services)
 	{
-		return serviceCollection;
+		return services;
 	}
 }

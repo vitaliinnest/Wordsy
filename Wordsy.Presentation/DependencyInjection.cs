@@ -4,8 +4,8 @@ namespace Wordsy.Presentation;
 
 public static class DependencyInjection
 {
-	public static IServiceCollection AddPresentation(this IServiceCollection serviceCollection)
+	public static IServiceCollection AddPresentation(this IServiceCollection services)
 	{
-		return serviceCollection;
+		return services;
 	}
 }
