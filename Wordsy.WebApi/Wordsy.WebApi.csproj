@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>003c6775-50cc-4c34-87ef-c3f682da025d</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Wordsy.Application\Wordsy.Application.csproj" />
+    <ProjectReference Include="..\Wordsy.Infrastructure\Wordsy.Infrastructure.csproj" />
+    <ProjectReference Include="..\Wordsy.Presentation\Wordsy.Presentation.csproj" />
+  </ItemGroup>
+
+</Project>

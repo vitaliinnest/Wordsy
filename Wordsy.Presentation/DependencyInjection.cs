@@ -1,0 +1,11 @@
+﻿using Microsoft.Extensions.DependencyInjection;
+
+namespace Wordsy.Presentation;
+
+public static class DependencyInjection
+{
+	public static IServiceCollection AddPresentation(this IServiceCollection serviceCollection)
+	{
+		return serviceCollection;
+	}
+}
