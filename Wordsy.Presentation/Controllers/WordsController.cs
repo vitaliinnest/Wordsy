@@ -1,10 +1,12 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Wordsy.Application.Words.Commands.CreateWord;
 using Wordsy.Application.Words.Queries.GetAllWords;
 
 namespace Wordsy.Presentation.Controllers;
 
+[Authorize]
 [ApiController]
 [Route("api/[controller]")]
 public class WordsController(IMediator mediator) : ControllerBase
